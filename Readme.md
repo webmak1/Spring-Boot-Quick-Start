@@ -140,6 +140,77 @@ $ curl \
     | jq
 ```
 
+<br/>
+
+### Spring Boot Quick Start 31 - Adding Entity Relationship and Extending Repository
+
+<br/>
+
+```
+// CREATE
+$ curl \
+    --data '{
+      "id":"java-streams",
+      "name":"Java Streams",
+      "description":"Java Streams Description"
+      }' \
+    --header "Content-Type: application/json" \
+    --request POST \
+    --url http://localhost:8080/topics/java/courses \
+    | jq
+```
+
+<br/>
+
+```
+// CREATE
+$ curl \
+    --data '{
+      "id":"java-concurrency",
+      "name":"Java Concurrency",
+      "description":"Java Concurrency Description"
+      }' \
+    --header "Content-Type: application/json" \
+    --request POST \
+    --url http://localhost:8080/topics/java/courses \
+    | jq
+```
+
+<br/>
+
+```
+$ curl \
+    --header "Content-Type: application/json" \
+    --request GET \
+    --url http://localhost:8080/topics/java/courses \
+    | jq
+```
+
+<br/>
+
+```
+$ curl \
+    --header "Content-Type: application/json" \
+    --request GET \
+    --url http://localhost:8080/topics/java/courses/java-concurrency \
+    | jq
+```
+
+<br/>
+
+```
+// UPDATE
+$ curl \
+    --data '{
+      "id":"java-streams",
+      "name":"Java Streams Updated",
+      "description":"Java Streams Description Updated"
+      }' \
+    --header "Content-Type: application/json" \
+    --request PUT \
+    --url http://localhost:8080/topics/java/courses/java-streams \
+    | jq
+```
 
 <br/>
 
