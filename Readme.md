@@ -214,6 +214,15 @@ $ curl \
 
 <br/>
 
+### Spring Boot Quick Start 32 - Packaging and running a Spring Boot app
+
+```
+$ mvn clean install
+$ java -jar target/springbootquickstart-0.0.1-SNAPSHOT.jar
+```
+
+<br/>
+
 ---
 
 <br/>
@@ -222,3 +231,5 @@ $ curl \
 
 Any questions on eng: https://javadev.org/chat/  
 Любые вопросы на русском: https://javadev.ru/chat/
+
+
